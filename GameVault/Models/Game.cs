@@ -2,6 +2,16 @@
 {
     public class Game
     {
+        public Game(string title, string platform, GameStatus status, int? rating, string? notes, DateTime dateAdded)
+        {
+            Title = title;
+            Platform = platform;
+            Status = status;
+            Rating = rating;
+            Notes = notes;
+            DateAdded = dateAdded;
+        }
+
         public int Id { get; set; }
 
         public string Title { get; set; } = string.Empty;
